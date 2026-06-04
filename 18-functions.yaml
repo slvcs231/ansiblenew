@@ -1,0 +1,6 @@
+- name: Functions
+  hosts:  frontend
+  tasks:
+  - name: calling Functions
+    ansible.builtin.debug:
+      msg:  " Hello, {{ name | default('Reddiah')}} "
