@@ -2,7 +2,7 @@
   hosts:  frontend
   become: yes
   vars_files:
-  -Course.yaml
+  -course.yaml
   tasks:
   - name: print course info
   ansible.builtin.debug:
