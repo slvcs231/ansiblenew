@@ -3,10 +3,10 @@
   tasks:
   - name: install packages
     ansible.builtin.package:
-      name: {{item}}
+      name: "{{ item }}"
       state:  installed
     loop:
-    - nginx
-    - git 
+    - git  
     - wget
-    - mysql
+    - niginx
+    
