@@ -9,4 +9,4 @@
     loop:
     - { name: "nginx", state: "absent" }
     - { name: "mysql", state: "absent" }
-    - { name: "zip",  state:  "present" }
+    - { name: "zip",  state:  "latest" }
