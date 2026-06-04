@@ -1,7 +1,7 @@
 - name: Condition checking
   hosts:  frontend
   vars:
-    number: 11
+    number: 2
   tasks:
   - name: checking number is less than 10 or not
     ansible.builtin.debug:
