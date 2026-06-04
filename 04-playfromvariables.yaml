@@ -1,0 +1,10 @@
+- name: play form variables
+  hosts:  frontend
+  vars:
+    COURSE: Devops
+    DURATION: 10hrs
+    TRAINER:  Reddiah
+  tasks:
+  - name: print the COURSE info
+    ansible.builtin.debug:
+      msg:  "Course Name is: {{COURSE}}, Duration is: {{DURATION}}, Trainer Name is: {{TRAINER}}"
