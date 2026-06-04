@@ -1,0 +1,8 @@
+- name: facts checking
+  hosts:  frontend
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+    - name: nginx
+      state:  latest
+    when: ansible_os_family ==  "Redhat"
