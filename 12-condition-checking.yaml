@@ -1,9 +1,10 @@
-- name: condition checking
+- name: Condition checking
   hosts:  frontend
   vars:
     number: 5
   tasks:
   - name: checking number is less than 10 or not
-  ansible.builtin.debug:
-    msg:  "Given Number {{ number }} is less than 10"
-  when: number < 10
+    ansible.builtin.debug:
+      msg:  "Given number {{ number }} is less than 5"
+    when: number  < 10
+    
