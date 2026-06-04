@@ -8,5 +8,5 @@
     loop:
     - git  
     - wget
-    - niginx
-    
+    - nginx
+    - mysql
