@@ -1,7 +1,6 @@
-- name: variables from file
-  hosts: local
-  connection: local
+- name: variables from files
+  hosts:  frontend
   tasks:
   - name: print course info
-  ansible.builtin.debug:
-    msg: "Course Name is: {{COURSE}}, Duration is: {{DURATION}}, Trainer Name is: {{TRAINER}}"
+    ansible.builtin.debug:
+      msg:  "Name of the Course: {{COURSE}}, Name of the Trainer: {{TRAINER}}"
