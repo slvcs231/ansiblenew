@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts:  frontend
+  become: yes
+  vars_files:
+  - Course.yaml
+  tasks:
+  - name: print course info
+  ansible.builtin.debug:
+    msg: "Course Name is: {{COURSE}}, Duration is: {{DURATION}}, Trainer Name is: {{TRAINER}}"
