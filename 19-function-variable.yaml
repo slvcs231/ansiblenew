@@ -2,6 +2,9 @@
   hosts:  frontend
   vars:
     technologies: Devops, Linux, Shell, Ansible
+    name: Reddiah
+    gmail:  reddeiah18g@gmail.com
+    ipaddress:  "3.90.47.153"
     tags:
       Application:  payment
       environment:  Dev
@@ -22,3 +25,7 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg:  " Tags are: {{ tags | dict2items}}"
+
+  - name: ipaddress checking
+    ansible.builtin.debug:
+      msg:  "{{ ipaddress | ansible.utils.IPV4 }}"
