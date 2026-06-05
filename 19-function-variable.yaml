@@ -4,7 +4,7 @@
     technologies: Devops, Linux, Shell, Ansible
     name: Reddiah
     gmail:  reddeiah18g@gmail.com
-    ipaddress:  "3.90.47.153"
+    ipaddress:  "172.31.43.193"
     tags:
       Application:  payment
       environment:  Dev
@@ -28,4 +28,4 @@
 
   - name: ipaddress checking
     ansible.builtin.debug:
-      msg:  "{{ ipaddress | ansible.utils.IPV4 }}"
+      msg:  "{{ ipaddress | ansible.utils.ipv4 }}"
