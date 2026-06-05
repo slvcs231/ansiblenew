@@ -1,9 +1,17 @@
+#- name: variables from files
+ # hosts: frontend
+#vars_files:
+ # - course.yaml
+ # tasks:
+ # - name: print course info
+ # ansible.builtin.debug:
+ #   msg: "Course Name is: {{COURSE}}, Duration is: {{DURATION}}, Trainer Name is: {{TRAINER}}"
+
 - name: variables from files
-  hosts: frontend
-  vars_files:
+  hosts:  frontend
+  vars_file:
   - course.yaml
   tasks:
   - name: print course info
   ansible.builtin.debug:
-    msg: "Course Name is: {{COURSE}}, Duration is: {{DURATION}}, Trainer Name is: {{TRAINER}}"
-
+    msg:  "Course Name is: {{ COURSE}}, Trainer Name is: {{ TRAINER }}"
