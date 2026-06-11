@@ -40,4 +40,4 @@
       msg:  "{{ command_output }}"
 
   - name: redirect the output
-    ansible.builtin.command:  ls -ltr > /tmp/output.txt
+    ansible.builtin.shell:  ls -ltr > /tmp/output.txt
