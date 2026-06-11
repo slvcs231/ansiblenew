@@ -1,0 +1,7 @@
+- name: create ec2 and r53
+  hosts:  frontend
+  become: yes
+  vars:
+    ami_id: ami-0220d79f3f480ecf5
+    sg_id:  sg-096cdc6ca04cabef9
+    zone_id:  
