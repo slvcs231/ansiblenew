@@ -4,7 +4,7 @@
     technologies: Devops, Linux, Shell, Ansible
     name: Reddiah
     gmail:  reddeiah18g@gmail.com
-    ipaddress:  ""54.166.14.72
+    ipaddress:  "54.166.14.72"
     tags:
       Application:  payment
       environment:  Dev
